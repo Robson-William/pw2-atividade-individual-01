@@ -1,7 +1,7 @@
 import "./styles.css";
-import driverProfile from "../../../public/driverProfile.png";
-import star from "../../../public/star.png";
-import carModel from "../../../public/carModel.png";
+import driverProfile from "./driverProfile.png";
+import star from "./star.png";
+import carModel from "./carModel.png";
 
 export default function Driver() {
   return (
