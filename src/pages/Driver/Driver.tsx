@@ -1,8 +1,9 @@
 import "./styles.css";
-import driverProfile from "./driverProfile.png";
-import star from "./star.png";
-import carModel from "./carModel.png";
+import driverProfile from "/driverProfile.png";
+import star from "/star.png";
+import carModel from "/carModel.png";
 
+import Chat from "../../components/Chat/Chat";
 export default function Driver() {
   return (
     <div className="mainBody">
@@ -32,6 +33,8 @@ export default function Driver() {
           <p className="carModel">Honda Civic Roxo</p>
         </div>
       </div>
+
+      <Chat />
     </div>
   )
 }
