@@ -8,6 +8,8 @@ import { messagesMock } from "../../mock/messagesMock";
 export default function Driver() {
   return (
     <div className="mainBody">
+      <div id="symbol"></div>
+
       <header className="alertMessage">
         <p className="mainMessage">
           Encontre <span id="driverName">Fábio</span> no local de partida.

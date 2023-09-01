@@ -1,6 +1,19 @@
 @import "../../styles/global/themes.module.css";
 @import "../../styles/global/defaultConfig.module.css";
 
+#root {
+  margin: 0 auto;
+}
+
+#symbol {
+  background-color: var(--dark-gray);
+  width: 168px;
+  height: 68px;
+  border-radius: 999px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
 .mainMessage {
   font-size: 40px;
   font-weight: 700;
