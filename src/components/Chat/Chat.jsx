@@ -1,8 +1,6 @@
 import "./styles.css";
 import phone from "/phone.png";
 import shield from "/shield.png";
-import client from "/client.png";
-import driverProfile from "/driverProfile.png";
 import trashCan from "/trashcan.png";
 
 export default function Chat({ messages }) {
