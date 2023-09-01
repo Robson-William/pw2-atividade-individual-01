@@ -2,8 +2,9 @@ import "./styles.css";
 import driverProfile from "/driverProfile.png";
 import star from "/star.png";
 import carModel from "/carModel.png";
-
 import Chat from "../../components/Chat/Chat";
+import { messagesMock } from "../../mock/messagesMock";
+
 export default function Driver() {
   return (
     <div className="mainBody">
@@ -34,7 +35,7 @@ export default function Driver() {
         </div>
       </div>
 
-      <Chat />
+      <Chat messages={messagesMock} />
     </div>
   )
 }

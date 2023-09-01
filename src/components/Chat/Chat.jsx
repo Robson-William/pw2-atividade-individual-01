@@ -5,10 +5,10 @@ import client from "/client.png";
 import driverProfile from "/driverProfile.png";
 import trashCan from "/trashcan.png";
 
-export default function Chat() {
+export default function Chat({ messages }) {
   return (
     <>
-      <div class="privateMessageInput">
+      <div className="privateMessageInput">
         <input type="text" placeholder="Enviar mensagem para Fábio..." />
         <button>Publicar</button>
         <a href="#">
@@ -19,24 +19,19 @@ export default function Chat() {
         </a>
       </div>
 
-      <div class="privateMessage">
-        <img class="profilePicture" alt="Profile" src={client} />
-        <p>
-          Boris estou no local já lhe esperando. estou com camisa azul e calça
-          jeans
-        </p>
-        <a href="#">
-          <img src={trashCan} alt="????" />
-        </a>
-      </div>
-
-      <div class="privateMessage">
-        <img class="profilePicture" alt="Profile" src={driverProfile} />
-        <p>Acabei de lhe ver. Vou estacionar o carro próximo.</p>
-        <a href="#">
-          <img src={trashCan} alt="????" />
-        </a>
-      </div>
+      {messages.map((message, i) => (
+        <div className="privateMessage" key={i}>
+          <img
+            className="profilePicture"
+            alt="Profile"
+            src={message.user.picture}
+          />
+          <p>{message.message}</p>
+          <a href="#">
+            <img src={trashCan} alt="????" />
+          </a>
+        </div>
+      ))}
     </>
   );
 }
