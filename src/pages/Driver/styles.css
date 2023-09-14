@@ -54,6 +54,10 @@
   position: absolute;
 }
 
+.driverProfile > p {
+  margin: 7px;
+}
+
 .driverRate {
   display: flex;
   align-items: center;
@@ -66,7 +70,7 @@
   width: 99px;
   height: 31px;
   padding: 1px;
-  top: 70%;
+  top: 62%;
   left: 16%;
   font-size: 17px;
   font-weight: 600;
