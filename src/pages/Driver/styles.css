@@ -11,6 +11,7 @@
 }
 
 .mainMessage {
+  font-family: "Inter";
   font-size: 40px;
   font-weight: 700;
   color: var(--black);
@@ -21,6 +22,7 @@
 }
 
 .subMessage {
+  font-family: "Inter";
   font-size: 25px;
   font-weight: 500;
   color: var(--black);
@@ -45,6 +47,7 @@
 .driverProfile {
   display: block;
   color: var(--black);
+  font-family: "Inter";
   font-weight: 700;
   align-items: center;
   text-align: center;
@@ -60,7 +63,8 @@
   color: var(--white);
   border-radius: 16px;
   position: absolute;
-  width: 65%;
+  width: 99px;
+  height: 31px;
   padding: 1px;
   top: 70%;
   left: 16%;
@@ -75,6 +79,7 @@
 
 .carData {
   text-align: center;
+  font-family: "Inter";
   font-weight: 700;
 }
 
